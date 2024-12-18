@@ -34,14 +34,14 @@ import ru.iteco.fmhandroid.R;
 
 @LargeTest
 @RunWith(AndroidJUnit4.class)
-public class TestAbout {
+public class AboutTest {
 
     @Rule
     public ActivityScenarioRule<AppActivity> mActivityScenarioRule =
             new ActivityScenarioRule<>(AppActivity.class);
 
     @Test
-    public void testAbout() {
+    public void aboutTest() {
         ViewInteraction appCompatImageButton = onView(
                 allOf(withId(R.id.main_menu_image_button), withContentDescription("Main menu"),
                         childAtPosition(
